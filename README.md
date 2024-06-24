@@ -1,2 +1,2 @@
 # PetsLife
-Sitema Inteligente
+Sistema Inteligente
