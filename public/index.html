@@ -1,89 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet's Life - Bem-vindo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/tela-inicial.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://firebasestorage.googleapis.com/v0/b/pet-s-life-7a402.appspot.com/o/logo.png?alt=media&token=6f571970-d68c-41f4-a4d6-b21f3b6552c3" alt="Logo Pet's Life">
+            </div>
+            <div class="site-title">
+                <h1>Pet's Life</h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <nav id="mobile-menu">
+            <div class="close-menu" onclick="toggleMenu()">X</div>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#"><i class="fas fa-paw"></i> Serviços</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Sobre Nós</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="autenticacao/login.html" class="btn-login"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+        <nav id="desktop-menu">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#"><i class="fas fa-paw"></i> Serviços</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Sobre Nós</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="autenticacao/login.html" class="btn-login"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.12.5/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.12.5/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <section class="banner">
+        <div>
+            <h1>Bem-vindo ao Pet's Life</h1>
+            <p>O portal completo para o bem-estar do seu pet</p>
+        </div>
+    </section>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div class="container">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos tudo o que seu pet precisa para viver feliz e saudável.</p>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-heart"></i>
+                <h3>Adoção de Pets</h3>
+                <p>Encontre um novo amigo para adotar.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Agendamento de Consultas</h3>
+                <p>Agende consultas de forma rápida e fácil.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-paw"></i>
+                <h3>Animais Perdidos</h3>
+                <p>Ajuda para encontrar pets perdidos na sua região.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-briefcase-medical"></i>
+                <h3>Auxílio Emergencial</h3>
+                <p>Serviço de emergência 24 horas.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-newspaper"></i>
+                <h3>Blog/Notícias</h3>
+                <p>Dicas e informações sobre cuidados com pets.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-syringe"></i>
+                <h3>Caderneta de Vacinação</h3>
+                <p>Calendário e controle de vacinas.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-id-card"></i>
+                <h3>Carteirinha do seu Pet</h3>
+                <p>Carteirinha com registros médicos e vacinas.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-vials"></i>
+                <h3>Exames Laboratoriais</h3>
+                <p>Exames para monitorar a saúde do pet.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-birthday-cake"></i>
+                <h3>Kit de Festas de Aniversário</h3>
+                <p>Tudo para celebrar o aniversário do seu pet.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-store"></i>
+                <h3>Pet Shops</h3>
+                <p>Produtos e serviços para o seu pet.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user"></i>
+                <h3>Pet Sitters</h3>
+                <p>Profissionais para cuidar do seu pet.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-taxi"></i>
+                <h3>Taxy Dog</h3>
+                <p>Transporte seguro para o seu pet.</p>
+            </div>
+        </div>
+        <div class="cta">
+            <a href="autenticacao/login.html" class="btn-primary">Login</a>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+            <a href="#">Ajuda</a>
+        </div>
+        <p>&copy; 2024 Pet's Life. Todos os direitos reservados.</p>
+    </footer>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
         }
-      });
     </script>
-  </body>
+</body>
 </html>

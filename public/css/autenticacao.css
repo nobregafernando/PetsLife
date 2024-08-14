@@ -1,4 +1,3 @@
-/* Estilos globais */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f4f8;
@@ -7,21 +6,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     color: #333;
 }
 
-.main-container, .login-container {
+.login-container {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
     max-width: 400px;
     text-align: center;
 }
 
-.main-container h1, .login-container h2 {
+.login-container h2 {
     margin-bottom: 20px;
     color: #2c3e50;
     font-weight: 500;
@@ -51,6 +50,7 @@ body {
 
 .login-container input:focus {
     border-color: #4285f4;
+    outline: none;
 }
 
 .login-container button {
@@ -83,44 +83,10 @@ body {
     text-decoration: underline;
 }
 
-/* Media Queries para Responsividade */
-
-/* Ajustes para dispositivos com largura máxima de 768px (Tablets) */
-@media (max-width: 768px) {
-    .main-container, .login-container {
-        padding: 20px;
-        max-width: 95%;
-    }
-
-    .login-container label, .login-container input, .login-container button {
-        font-size: 14px;
-    }
-}
-
-/* Ajustes para dispositivos com largura máxima de 480px (Celulares) */
-@media (max-width: 480px) {
-    .main-container, .login-container {
-        padding: 15px;
-        max-width: 90%;
-    }
-
-    .login-container label, .login-container input, .login-container button {
-        font-size: 12px;
-    }
-}
-
-/* Ajustes para dispositivos com largura máxima de 320px (Telas muito pequenas) */
-@media (max-width: 320px) {
-    .main-container, .login-container {
-        padding: 10px;
-        max-width: 85%;
-    }
-
-    .login-container label, .login-container input, .login-container button {
-        font-size: 11px;
-    }
-
-    .main-container h1, .login-container h2 {
-        font-size: 20px;
-    }
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
 }

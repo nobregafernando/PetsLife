@@ -1,18 +1,18 @@
-// Importar as funções necessárias do SDK do Firebase
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
-// Configuração do Firebase do seu aplicativo web
+// Configuração do Firebase para o seu projeto
 const firebaseConfig = {
-  apiKey: "AQUI_VAI_SUA_API_KEY",
-  authDomain: "seu-projeto.firebaseapp.com",
-  projectId: "seu-projeto",
-  storageBucket: "seu-projeto.appspot.com",
-  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
-  appId: "SEU_APP_ID",
-  measurementId: "SEU_MEASUREMENT_ID"
+  apiKey: "AIzaSyCzsQbaJffG1q-FB1emrH1GNlqoLrzqtkk",
+  authDomain: "pet-s-life-7a402.firebaseapp.com",
+  projectId: "pet-s-life-7a402",
+  storageBucket: "pet-s-life-7a402.appspot.com",
+  messagingSenderId: "714976810805",
+  appId: "1:714976810805:web:6ceaa2a3fa157d166c1e7c",
+  measurementId: "G-K6GPYMQXMB"
 };
 
-// Inicializar Firebase
+// Inicializa o Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
